@@ -9,7 +9,6 @@ var logger = require('morgan');
 
 var router = require('./routes/routes.js');
 var connectionString = require('./secrets')
-var Comment  = require('./models/blog');
 
 var API_PORT = process.env.API_PORT || 3001;
 app.use(bodyParser.urlencoded({ extended: false }));
